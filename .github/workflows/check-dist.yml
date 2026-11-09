@@ -9,18 +9,19 @@
 # expected from the build.
 name: Check Transpiled JavaScript
 
-on:
-  push:
-    branches:
-      - main
-      - dev
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev
+#     paths-ignore:
+#       - '**.md'
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 
